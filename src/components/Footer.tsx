@@ -29,10 +29,10 @@ export default function Footer() {
           {/* Center nav */}
           <nav style={{ display: 'flex', gap: '4px' }}>
             {[
-              { zh: '首页', href: '#home' },
-              { zh: '服务', href: '#services' },
-              { zh: '优势', href: '#why-us' },
-              { zh: '联系', href: '#contact' },
+              { zh: 'Home', href: '#home' },
+              { zh: 'Service', href: '#services' },
+              { zh: 'Advantages', href: '#why-us' },
+              { zh: 'Contact', href: '#contact' },
             ].map((l) => (
               <a
                 key={l.href}
@@ -77,7 +77,7 @@ export default function Footer() {
             © {new Date().getFullYear()} AetherX Pte. Ltd. · Registered in Singapore · All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: '16px' }}>
-            {['隐私政策', '服务条款'].map((t) => (
+            {['Privacy', 'Terms of service'].map((t) => (
               <a
                 key={t}
                 href="#"

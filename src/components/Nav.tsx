@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import TextScramble from './TextScramble'
 
 const navLinks = [
-  { zh: '首页', href: '#home' },
-  { zh: '服务', href: '#services' },
-  { zh: '技术优势', href: '#why-us' },
-  { zh: '联系我们', href: '#contact' },
+  { zh: 'Home', href: '#home' },
+  { zh: 'Service', href: '#services' },
+  { zh: 'Te', href: '#why-us' },
+  { zh: 'Contact Us', href: '#contact' },
 ]
 
 export default function Nav() {

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useMousePosition } from '../hooks/useMousePosition'
 import TextScramble from './TextScramble'
 
-const TYPING_LINES = ['以前沿技术，驱动您的数字化未来', 'Empowering Digital Futures', '全栈定制开发 · 全球交付']
+const TYPING_LINES = ['With cutting-edge technologies, drive your digital future', 'Empowering Digital Futures', 'Global Full-Stack Custom Development ']
 
 function useTypingEffect(lines: string[], speed = 55, pause = 1800) {
   const [text, setText] = useState('')
@@ -196,7 +196,7 @@ export default function Hero() {
             }}
           >
             <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#0AFFD9', animation: 'pulse-dot 2s ease infinite' }} />
-            <span className="f-label" style={{ color: '#0AFFD9' }}>新加坡注册 · Singapore Registered</span>
+            <span className="f-label" style={{ color: '#0AFFD9' }}>Singapore Registered</span>
           </div>
 
           {/* Typing headline */}
@@ -216,7 +216,7 @@ export default function Hero() {
               </span>
             </h1>
             <h2 className="f-display" style={{ fontSize: 'clamp(2.4rem, 4.5vw, 4rem)', color: '#F0F4FF' }}>
-              定制化软件解决方案
+              Customized Software Solutions
             </h2>
           </div>
 
@@ -225,17 +225,17 @@ export default function Hero() {
             fontSize: '16px', lineHeight: '1.8', color: '#7B8BAA', maxWidth: '440px',
             marginBottom: '44px', animation: 'fade-up 0.6s 0.35s cubic-bezier(0.22,1,0.36,1) both',
           }}>
-            AetherX 为全球企业提供高品质定制软件、移动应用及游戏开发。
-            从创意到落地，我们是最值得信赖的长期技术伙伴。
+            AetherX provides high-quality custom software, mobile applications, and game development for global enterprises.
+            From concept to implementation, we are the most trusted long-term technology partner.
           </p>
 
           {/* CTAs */}
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', animation: 'fade-up 0.6s 0.45s cubic-bezier(0.22,1,0.36,1) both' }}>
             <a href="#contact" className="btn-cta">
-              获取免费技术方案
+              Unlock your free technical solution
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </a>
-            <a href="#services" className="btn-ghost">查看服务范围</a>
+            <a href="#services" className="btn-ghost">Our service scope</a>
           </div>
 
           {/* Stats */}
@@ -244,7 +244,7 @@ export default function Hero() {
             borderTop: '1px solid rgba(240,244,255,0.07)',
             animation: 'fade-up 0.6s 0.55s cubic-bezier(0.22,1,0.36,1) both',
           }}>
-            {[{ n: '50+', label: '交付项目' }, { n: '12+', label: '服务国家' }, { n: '24h', label: '响应承诺' }].map((s, i) => (
+            {[{ n: '50+', label: 'Delivery project' }, { n: '12+', label: 'Served countries' }, { n: '24h', label: 'Quick response' }].map((s, i) => (
               <div key={s.label} style={{
                 flex: 1,
                 paddingRight: i < 2 ? '24px' : 0, marginRight: i < 2 ? '24px' : 0,

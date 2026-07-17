@@ -5,26 +5,26 @@ import TextScramble from './TextScramble'
 const advantages = [
   {
     num: '01', icon: '🇸🇬',
-    title: '新加坡总部，全球交付',
+    title: 'Base in Singapore, Global Delivery.',
     sub: 'Singapore Hub · Global Delivery',
-    desc: '总部位于新加坡核心金融区，拥有国际化技术视野与严谨的合规流程，服务覆盖亚洲、非洲及欧美市场。',
-    points: ['新加坡 PDPA 数据合规', 'MAS 监管合规框架', '亚洲 · 非洲 · 欧美多市场'],
+    desc: 'Headquartered in the core financial district of Singapore, with an international technological perspective and rigorous compliance processes, serving markets across Asia, Africa, and Europe and America.',
+    points: ['Singapore PDPA Data Compliance', 'MAS Regulatory Compliance Framework', 'Asia · Africa · Multi-market in Europe and America'],
     accent: '#0AFFD9',
   },
   {
     num: '02', icon: '🔒',
-    title: '高安全性与高并发支持',
+    title: 'High Security and High Concurrency Support',
     sub: 'Enterprise Security · High Concurrency',
-    desc: '系统采用企业级安全加密，具备高并发流量、多币种实时结算与跨境数据保护的实战架构经验。',
-    points: ['企业级 AES-256 加密', '高并发弹性架构', '多币种实时结算引擎'],
+    desc: 'The system employs enterprise-level security encryption, with practical architectural experience in handling high-concurrency traffic, multi-currency real-time settlement, and cross-border data protection.',
+    points: ['Enterprise-level AES-256 Encryption.', 'High Concurrency Elastic Architecture', 'Multi-Currency Real-Time Settlement Engine'],
     accent: '#6D43FF',
   },
   {
     num: '03', icon: '💻',
-    title: '透明交付，源码无忧',
+    title: 'Transparent Delivery, Worry-Free Source Code',
     sub: 'Transparent Delivery · Full Ownership',
-    desc: 'Agile 敏捷开发，里程碑式透明交付。项目结束后交付完整不加密定制源码与详尽技术文档。',
-    points: ['Agile 敏捷开发模式', '100% 源码完整交付', '详尽技术文档随附'],
+    desc: 'Agile development with milestone-based transparent delivery. Upon project completion, we deliver the complete unencrypted custom source code along with detailed technical documentation.',
+    points: ['Agile delivery', '100% source code delivery', 'Detail tech documents'],
     accent: '#0AFFD9',
   },
 ]
@@ -59,10 +59,10 @@ export default function WhyUs() {
         {/* Header */}
         <div ref={headerRef} className="reveal" style={{ marginBottom: '72px' }}>
           <div className="section-label-line">
-            <p className="f-label" style={{ color: '#6D43FF' }}>02 · Why Us · 为何选择我们</p>
+            <p className="f-label" style={{ color: '#6D43FF' }}>02 · Why Us · Why us</p>
           </div>
           <TextScramble
-            text="为什么全球客户选择 AetherX"
+            text="Why global clients choose AetherX"
             tag="h2"
             className="f-heading"
             style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#F0F4FF', maxWidth: '520px' }}
@@ -163,10 +163,10 @@ export default function WhyUs() {
           <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '300px', height: '1px', background: 'linear-gradient(90deg, transparent, rgba(10,255,217,0.4), transparent)' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 60% 80% at 50% 0%, rgba(10,255,217,0.03), transparent 60%)', pointerEvents: 'none' }} />
 
-          <StatCounter target={5} suffix="+" label="年行业经验" sublabel="Years of Experience" />
-          <StatCounter target={50} suffix="+" label="成功交付项目" sublabel="Delivered Projects" />
-          <StatCounter target={12} suffix="+" label="覆盖服务国家" sublabel="Countries Served" />
-          <StatCounter target={100} suffix="%" label="源码归属客户" sublabel="Full Code Ownership" />
+          <StatCounter target={5} suffix="+" label=" " sublabel="Years of Experience" />
+          <StatCounter target={50} suffix="+" label="成功Delivery project" sublabel="Delivered Projects" />
+          <StatCounter target={12} suffix="+" label="覆盖Served countries" sublabel="Countries Served" />
+          <StatCounter target={100} suffix="%" label="  " sublabel="Full Code Ownership" />
         </div>
       </div>
 

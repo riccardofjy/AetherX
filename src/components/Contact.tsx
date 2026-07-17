@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import TextScramble from './TextScramble'
 
-const BUDGET = ['< $5,000', '$5k – $20k', '$20k – $80k', '$80k+', '暂未确定']
+const BUDGET = ['< $5,000', '$5k – $20k', '$20k – $80k', '$80k+', 'Not yet confirmed']
 
 const inputBase: React.CSSProperties = {
   width: '100%',
@@ -70,26 +70,26 @@ export default function Contact() {
           {/* Left */}
           <div ref={leftRef} className="reveal-left">
             <div className="section-label-line" style={{ marginBottom: '16px' }}>
-              <p className="f-label" style={{ color: '#0AFFD9' }}>03 · Contact · 联系我们</p>
+              <p className="f-label" style={{ color: '#0AFFD9' }}>03 · Contact · Contact Us</p>
             </div>
             <TextScramble
-              text="留下您的技术需求"
+              text="Leave your tech questions"
               tag="h2"
               className="f-heading"
               style={{ fontSize: 'clamp(2rem, 3vw, 2.6rem)', color: '#F0F4FF', marginBottom: '20px' }}
             />
             <p className="f-body" style={{ fontSize: '15px', lineHeight: '1.8', color: '#7B8BAA', marginBottom: '48px' }}>
-              无论您有明确需求还是初步创意，我们的技术专家将在{' '}
-              <span style={{ color: '#0AFFD9', fontWeight: 600 }}>24 小时</span>
-              {' '}内提供免费技术可行性评估。
+              Whether you have specific requirements or just initial ideas, our technical experts will be able to assist you within{' '}
+              <span style={{ color: '#0AFFD9', fontWeight: 600 }}>24 hours</span>
+              {' '}to provide free tech consultant.
             </p>
 
             {/* Info */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '40px' }}>
               {[
-                { label: '公司注册名', value: 'AetherX Pte. Ltd.', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><polyline points="9,22 9,12 15,12 15,22" /></svg> },
-                { label: '办公地址', value: '10 Anson Road #19-14, International Plaza, Singapore 079903', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg> },
-                { label: '电子邮箱', value: 'contact@aetherx.co', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg> },
+                { label: 'Company Registration Name', value: 'AetherX Pte. Ltd.', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><polyline points="9,22 9,12 15,12 15,22" /></svg> },
+                { label: 'Office Address', value: '10 Anson Road #19-14, International Plaza, Singapore 079903', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg> },
+                { label: 'E-mail', value: 'contact@aetherx.co', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg> },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -109,7 +109,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <p className="f-label" style={{ color: '#3D4F6B', marginBottom: '12px' }}>即时沟通</p>
+              <p className="f-label" style={{ color: '#3D4F6B', marginBottom: '12px' }}>Communicate in time</p>
               <div style={{ display: 'flex', gap: '10px' }}>
                 {[
                   { label: 'WhatsApp', color: '#25D366', bg: 'rgba(37,211,102,0.1)', border: 'rgba(37,211,102,0.25)' },
@@ -143,32 +143,32 @@ export default function Contact() {
                     <div style={{ width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'rgba(10,255,217,0.08)', border: '1px solid rgba(10,255,217,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px' }}>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0AFFD9" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
                     </div>
-                    <h3 className="f-heading" style={{ fontSize: '1.4rem', color: '#F0F4FF', marginBottom: '10px' }}>消息已发送</h3>
-                    <p style={{ fontFamily: 'DM Sans', fontSize: '14px', color: '#7B8BAA' }}>我们将在 24 小时内与您联系。</p>
+                    <h3 className="f-heading" style={{ fontSize: '1.4rem', color: '#F0F4FF', marginBottom: '10px' }}>Message sent</h3>
+                    <p style={{ fontFamily: 'DM Sans', fontSize: '14px', color: '#7B8BAA' }}>We will contact you in 24 hours.</p>
                   </div>
                 ) : (
                   <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }} className="form-row">
-                      <Field label="姓名 Name *">
-                        <input required placeholder="您的姓名" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={inputBase} onFocus={focusIn} onBlur={focusOut} />
+                      <Field label="  Name *">
+                        <input required placeholder="Name " value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={inputBase} onFocus={focusIn} onBlur={focusOut} />
                       </Field>
-                      <Field label="邮箱 Email *">
+                      <Field label="   Email *">
                         <input required type="email" placeholder="your@email.com" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} style={inputBase} onFocus={focusIn} onBlur={focusOut} />
                       </Field>
                     </div>
 
-                    <Field label="公司 Company">
-                      <input placeholder="公司名称（选填）" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} style={inputBase} onFocus={focusIn} onBlur={focusOut} />
+                    <Field label="    Company">
+                      <input placeholder="   Name（Optional）" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} style={inputBase} onFocus={focusIn} onBlur={focusOut} />
                     </Field>
 
-                    <Field label="需求描述 Project Brief *">
-                      <textarea required rows={4} placeholder="请描述您的项目需求、目标用户、核心功能……" value={form.req} onChange={(e) => setForm({ ...form, req: e.target.value })} style={{ ...inputBase, resize: 'vertical', minHeight: '100px' }}
+                    <Field label="Your requirement Project Brief *">
+                      <textarea required rows={4} placeholder="Please describe your project requirements, target users, core functions, etc." value={form.req} onChange={(e) => setForm({ ...form, req: e.target.value })} style={{ ...inputBase, resize: 'vertical', minHeight: '100px' }}
                         onFocus={focusIn as React.FocusEventHandler<HTMLTextAreaElement>}
                         onBlur={focusOut as React.FocusEventHandler<HTMLTextAreaElement>}
                       />
                     </Field>
 
-                    <Field label="预算区间 Budget">
+                    <Field label="Budget range">
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                         {BUDGET.map((b) => (
                           <button type="button" key={b} onClick={() => setForm({ ...form, budget: b })}
@@ -180,11 +180,11 @@ export default function Contact() {
                     </Field>
 
                     <button type="submit" className="btn-cta" style={{ width: '100%', justifyContent: 'center', marginTop: '8px', fontSize: '14px', padding: '15px' }}>
-                      提交需求，获取免费方案
+                      Submit your requirements and obtain a free plan.
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                     </button>
                     <p style={{ fontFamily: 'DM Sans', fontSize: '12px', color: '#3D4F6B', textAlign: 'center' }}>
-                      您的信息将严格保密 · 24 小时内回复
+                      Your information will be kept strictly confidential. · 24 hours response
                     </p>
                   </form>
                 )}

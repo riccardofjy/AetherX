@@ -9,10 +9,10 @@ const IconGlobe = () => <svg width={ICON_SIZE} height={ICON_SIZE} viewBox="0 0 2
 const IconGame = () => <svg width={ICON_SIZE} height={ICON_SIZE} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="6" width="20" height="12" rx="2" /><path d="M12 12h.01M8 12h.01M10 10v4M17 10v.01M15 12v.01" /></svg>
 
 const services = [
-  { icon: <IconCode />, title: '软件定制开发', sub: 'Custom Software Development', desc: '量身定制企业级管理系统（ERP、CRM、进销存、跨境结算），支持多币种与合规性架构设计。', tags: ['ERP / CRM', 'FinTech', '多币种结算'], accent: '#0AFFD9', featured: true },
-  { icon: <IconMobile />, title: '移动应用开发', sub: 'Mobile App Development', desc: 'iOS & Android 原生及跨平台（Flutter / React Native）APP 开发，极致 UX/UI 设计。', tags: ['iOS & Android', 'Flutter', 'React Native'], accent: '#6D43FF', featured: false },
-  { icon: <IconGlobe />, title: '高端网站建设', sub: 'Premium Web Development', desc: '企业官网、跨境电商、Web3.0 应用，极速加载、全端响应与 SEO 优化。', tags: ['Web3', '电商平台', 'SEO优化'], accent: '#0AFFD9', featured: false },
-  { icon: <IconGame />, title: '游戏开发与运营', sub: 'Game Development & Operations', desc: '2D/3D 移动游戏与 H5 网页游戏，全生命周期服务：策划、美术、开发、维护。', tags: ['2D / 3D', 'H5游戏', '全流程'], accent: '#6D43FF', featured: false },
+  { icon: <IconCode />, title: '', sub: 'Custom Software Development', desc: 'Tailor-made enterprise-level management systems (ERP, CRM, inventory management, cross-border settlement), supporting multi-currency and compliance architecture design.', tags: ['ERP / CRM', 'FinTech', 'Multi-currency Settlement'], accent: '#0AFFD9', featured: true },
+  { icon: <IconMobile />, title: 'Mobile App Development', sub: 'Mobile App Development', desc: 'Native and cross-platform (Flutter / React Native) app development for iOS & Android, with an emphasis on exceptional UX/UI design.', tags: ['iOS & Android', 'Flutter', 'React Native'], accent: '#6D43FF', featured: false },
+  { icon: <IconGlobe />, title: 'Premium Web Development', sub: 'Premium Web Development', desc: 'Corporate websites, cross-border e-commerce, and Web 3.0 applications, featuring fast loading, full responsiveness, and SEO optimization.', tags: ['Web3', 'E-commerce platform', 'SEO'], accent: '#0AFFD9', featured: false },
+  { icon: <IconGame />, title: 'Game Development & Operations', sub: 'Game Development & Operations', desc: '2D/3D mobile games and H5 web games, providing full lifecycle services: planning, art, development, and maintenance.', tags: ['2D / 3D', 'H5 game', 'End-to-end journey'], accent: '#6D43FF', featured: false },
 ]
 
 // 3D tilt card
@@ -82,17 +82,17 @@ export default function Services() {
         {/* Header */}
         <div ref={headerRef} className="reveal" style={{ marginBottom: '64px' }}>
           <div className="section-label-line">
-            <p className="f-label" style={{ color: '#0AFFD9' }}>01 · Services · 服务范围</p>
+            <p className="f-label" style={{ color: '#0AFFD9' }}>01 · Services · SCOPE</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', alignItems: 'end' }} className="section-header-grid">
             <TextScramble
-              text="我们能为您提供什么"
+              text="What we can offer"
               tag="h2"
               className="f-heading"
               style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#F0F4FF' }}
             />
             <p className="f-body" style={{ color: '#7B8BAA', fontSize: '15px', lineHeight: '1.7', maxWidth: '400px' }}>
-              从底层架构到用户界面，AetherX 全栈覆盖您数字化转型的每一个关键环节。
+              From the underlying architecture to the user interface, AetherX fully covers every critical aspect of your digital transformation.
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function Services() {
                 ))}
               </div>
               <a href="#contact" className="btn-cta" style={{ fontSize: '13px', padding: '11px 24px' }}>
-                了解更多
+                Learn more
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </a>
             </div>
